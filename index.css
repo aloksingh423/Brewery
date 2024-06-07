@@ -1,0 +1,136 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #eff1f2 0%, #4b5158 100%);
+  color: #333;
+  line-height: 1.6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  color: #0366d6;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #024aad;
+}
+
+/* Form Container */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2 {
+  margin-bottom: 20px;
+  color: #0366d6;
+  font-size: 24px;
+}
+
+/* Input and Button Styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  display: block;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #0366d6;
+  outline: none;
+}
+
+button {
+  background-color: #0366d6;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0d4696;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  color: #0366d6;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-decoration: underline;
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.link-button:hover {
+  color: #024aad;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page {
+    padding: 20px;
+    height: auto;
+  }
+}
